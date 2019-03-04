@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <assert.h>
 
 // Simple fuzz target for BrokenMethod().
