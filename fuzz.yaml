@@ -1,0 +1,13 @@
+base: ubuntu:16.04
+setup: # global setup steps here
+environment: # global env vars here
+targets:
+- name: trivial
+  language: c
+  setup:
+    - $FUZZ_CC $CFLAGS harness.c $FUZZ_ENGINER -o ./target
+  harness: 
+    binary: ./target
+  sanitizers:
+    address: detect_stack_use_after_return=1
+  corpus: ./corpus
