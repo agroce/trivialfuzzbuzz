@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdint.h>
 #include <assert.h>
 
 // Simple fuzz target for BrokenMethod().
