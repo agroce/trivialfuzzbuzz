@@ -4,7 +4,7 @@
 
 // Simple fuzz target for BrokenMethod().
 extern "C" int FuzzerEntrypoint(const uint8_t *data, size_t size) {
-  if (size < 20) {
+  if (size < 50) {
     return 0;
   }
   if (data[0] > 125) {
