@@ -5,7 +5,7 @@ targets:
 - name: trivial
   language: c++
   setup:
-    - $FUZZ_CXX $CXXFLAGS ./harness.c $FUZZ_ENGINE -o ./target
+    - $FUZZ_CXX $CXXFLAGS ./harness.cpp $FUZZ_ENGINE -o ./target
   harness: 
     binary: ./target
   sanitizers:
